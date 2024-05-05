@@ -1,0 +1,106 @@
+:root {
+    --backgound-green: #0D3E06;
+    --backgound-purple: #2D063E;
+}
+
+body {
+    background-color: var(--backgound-purple);
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vh 75vh 10vh;
+    grid-template-areas: 
+        "Header"
+        "Main"
+        "Footer";
+}
+
+header, nav, main, footer {
+    padding: 2.5vh;
+    box-sizing: border-box;
+}
+
+h2{
+    font-size: 120%;
+}
+
+header {
+    grid-area: Header;
+    background-color: var(--backgound-green);
+    color: #fff;
+    text-align: center;
+}
+
+li {
+    display: inline;
+    margin: 10vw;
+    justify-content: center;
+}
+
+.pageHolder{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "skills werkhouding";
+}
+
+button {
+    background-color: var(--backgound-purple);
+    color: #fff;
+    border: none;
+    padding: 20px 40px;
+    text-align: center;
+    font-size: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 10vw;
+    height: 5h;
+}
+
+button:hover {
+    background-color: #520972;
+    transform: scale(1.1);
+}
+
+main {
+    grid-area: Main;
+    padding-top: 5px;
+    color: #fff;
+    text-align: center;
+}
+
+footer {
+    grid-area: Footer;
+    background-color: var(--backgound-green);
+    color: #fff;
+    text-align: center;
+    font-size: 115%;
+}
+
+.resultatenSkills {
+    grid-area: skills;
+    font-size: 120%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.pageHolder img {
+    width: 7%;
+    padding: 2%;
+}
+.pageHolder img:hover {
+    transform: scale(1.2);
+}
+
+.resultatenWerkhouding{
+    grid-area: werkhouding;
+    font-size: 120%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
