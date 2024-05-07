@@ -113,5 +113,16 @@ footer {
 
 .grades img{
     width: 11vw;
-    margin: 0 7vw;
+    margin: 0 4vw;
+}
+
+.grades img:hover {
+    transform: scale(1.1);
+}
+
+.IresultatenSkills img{
+    width: 50%;
+}
+.IresultatenWerkhouding img{
+    width: 50%;
 }
