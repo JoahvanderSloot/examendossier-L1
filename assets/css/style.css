@@ -51,13 +51,12 @@ button {
     background-color: var(--backgound-purple);
     color: #fff;
     border: none;
-    padding: 20px 40px;
     text-align: center;
     font-size: 100%;
     border-radius: 5px;
     cursor: pointer;
     width: 10vw;
-    height: 5h;
+    height: 7vh;
 }
 
 button:hover {
@@ -125,4 +124,31 @@ footer {
 }
 .IresultatenWerkhouding img{
     width: 50%;
+}
+
+.PeriodeOne{
+    display: grid;
+    text-align: justify;
+    margin-left: 5vw;
+    margin-top: 3vh;
+    font-size: 110%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "blok1 blok2";
+
+}
+
+.blok1{
+    grid-area: blok1;
+    margin-left: 5vw;
+}
+
+.blok2{
+    grid-area: blok2;
+}
+
+h3{
+    font: bolder;
+    font-size: 120%;
 }
