@@ -9,12 +9,22 @@ body {
     padding: 0;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 15vh 75vh 10vh;
+    grid-template-rows: auto 1fr auto;
     grid-template-areas: 
         "Header"
         "Main"
         "Footer";
 }
+
+footer {
+    grid-area: Footer;
+    background-color: var(--backgound-green);
+    color: #fff;
+    text-align: center;
+    font-size: 115%;
+    align-self: end;
+}
+
 
 header, nav, main, footer {
     padding: 2.5vh;
@@ -69,14 +79,6 @@ main {
     padding-top: 5px;
     color: #fff;
     text-align: center;
-}
-
-footer {
-    grid-area: Footer;
-    background-color: var(--backgound-green);
-    color: #fff;
-    text-align: center;
-    font-size: 115%;
 }
 
 .resultatenSkills {
