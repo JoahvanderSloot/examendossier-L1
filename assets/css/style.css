@@ -9,22 +9,24 @@ body {
     padding: 0;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto 1fr;
     grid-template-areas: 
         "Header"
         "Main"
-        "Footer";
 }
 
-footer {
-    grid-area: Footer;
-    background-color: var(--backgound-green);
+.footer{
     color: #fff;
     text-align: center;
+    align-content: center;
     font-size: 115%;
     align-self: end;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 7vh;
+    background-color: #0D3E06;
 }
-
 
 header, nav, main, footer {
     padding: 2.5vh;
@@ -148,6 +150,7 @@ main {
 
 .blok2{
     grid-area: blok2;
+    margin-left: 2vw;
 }
 
 h3{
